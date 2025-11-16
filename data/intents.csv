@@ -1,0 +1,279 @@
+text,intent
+what is the time,time
+tell me the time,time
+time please,time
+can you tell me the current time,time
+what's the time right now,time
+give me the time,time
+what time is it,time
+jarvis what's the time,time
+tell time,time
+please tell me the time,time
+i want to know the time,time
+hey assistant what’s the time,time
+do you know the time,time
+time right now,time
+give current time,time
+time check,time
+check time for me,time
+what’s the hour now,time
+tell me the hour,time
+time status,time
+show me the time,time
+current time please,time
+update me on the time,time
+assistant time check,time
+i need the time,time
+say the time,time
+current time info,time
+speak the time,time
+report the time,time
+time right away,time
+
+what's the date,date
+tell me today's date,date
+give me the date,date
+what day is today,date
+which date is today,date
+jarvis tell me the date,date
+current date,date
+date please,date
+i want today’s date,date
+tell me the full date,date
+assistant what is the date,date
+do you know today’s date,date
+today date check,date
+check today’s date,date
+what is today,date
+give current date,date
+show me today’s date,date
+tell date for me,date
+say the date,date
+what day are we on,date
+give me date info,date
+update me on today,date
+assistant give date,date
+report today’s date,date
+i need the date,date
+which day is it today,date
+today’s date please,date
+speak today’s date,date
+date right now,date
+today’s full date,date
+
+open google,open_website
+open youtube,open_website
+open instagram,open_website
+open facebook,open_website
+open twitter,open_website
+start google,open_website
+launch youtube,open_website
+go to google,open_website
+take me to youtube,open_website
+browser google,open_website
+open chrome and go to google,open_website
+open any website,open_website
+launch browser,open_website
+open my browser,open_website
+i want to open google,open_website
+go online,open_website
+visit google,open_website
+visit youtube,open_website
+take me online,open_website
+open the internet,open_website
+open reddit,open_website
+open github,open_website
+open stackoverflow,open_website
+open wikipedia,open_website
+launch instagram,open_website
+start facebook,open_website
+open browser and search google,open_website
+youtube open karo,open_website
+browser khol do,open_website
+chrome khol do,open_website
+
+search for python tutorials,search_web
+search for ai projects,search_web
+search linear regression,search_web
+google machine learning basics,search_web
+look up neural networks,search_web
+find me python courses,search_web
+search cooking recipes,search_web
+search news about india,search_web
+search weather today,search_web
+search for help on pandas library,search_web
+search who is elon musk,search_web
+google this for me,search_web
+look up this topic,search_web
+search for websites about ai,search_web
+search the internet for this,search_web
+search for anything online,search_web
+search for trending news,search_web
+i want to google something,search_web
+find this online,search_web
+search details for this,search_web
+search something for me,search_web
+look this up online,search_web
+get info from google,search_web
+research this for me,search_web
+search online quickly,search_web
+find information,search_web
+search wikipedia for this,search_web
+google करो,search_web
+internet पर search करो,search_web
+web search fast,search_web
+
+tell me a joke,joke
+make me laugh,joke
+crack a joke,joke
+say something funny,joke
+tell a funny line,joke
+make me smile,joke
+give me a joke,joke
+funny joke please,joke
+i want a joke,joke
+humor me,joke
+tell comedy,joke
+say a funny thing,joke
+joke सुनाओ,joke
+mujhe hasao,joke
+one more joke,joke
+tell another joke,joke
+i want to laugh,joke
+funniest joke please,joke
+give me something funny,joke
+make me laugh hard,joke
+make me chuckle,joke
+say something hilarious,joke
+say a dad joke,joke
+tell me a dark joke,joke
+give me a short joke,joke
+tell me a quick joke,joke
+drop a joke,joke
+spare a joke,joke
+funny please,joke
+tell joke fast,joke
+
+take a note,take_note
+note this down,take_note
+remember this,take_note
+save this,take_note
+write this note,take_note
+make a note,take_note
+take note please,take_note
+record this,take_note
+save this message,take_note
+save this text,take_note
+add this to notes,take_note
+note it down,take_note
+write down what i say,take_note
+save what i'm telling,take_note
+remember this for later,take_note
+store this information,take_note
+keep this note,take_note
+jarvis note this,take_note
+assistant take a note,take_note
+store this note,take_note
+write this quickly,take_note
+add to my notes,take_note
+save the following,take_note
+keep this saved,take_note
+remember what i say,take_note
+create a note,take_note
+write my note,take_note
+save my note,take_note
+save important note,take_note
+take important note,take_note
+
+explain supervised learning,ask_ai
+what is deep learning,ask_ai
+tell me about machine learning,ask_ai
+explain neural networks,ask_ai
+what is reinforcement learning,ask_ai
+what is logistic regression,ask_ai
+explain random forest,ask_ai
+what is svm,ask_ai
+explain decision tree,ask_ai
+difference between ai and ml,ask_ai
+difference between supervised and unsupervised,ask_ai
+what is overfitting,ask_ai
+explain underfitting,ask_ai
+explain gradient descent,ask_ai
+define machine learning,ask_ai
+what is python,ask_ai
+explain overfitting simply,ask_ai
+tell me about regression,ask_ai
+what is classification,ask_ai
+explain clustering,ask_ai
+what is kmeans,ask_ai
+what is neural network,ask_ai
+explain activation functions,ask_ai
+what are ml algorithms,ask_ai
+how does ai work,ask_ai
+what is artificial intelligence,ask_ai
+explain backpropagation,ask_ai
+explain transformers,ask_ai
+what is dataset,ask_ai
+why do we normalize data,ask_ai
+
+hello,smalltalk_greeting
+hey jarvis,smalltalk_greeting
+good morning,smalltalk_greeting
+good evening,smalltalk_greeting
+good night,smalltalk_greeting
+hi assistant,smalltalk_greeting
+hey,smalltalk_greeting
+hello there,smalltalk_greeting
+yo,smalltalk_greeting
+hi buddy,smalltalk_greeting
+how are you,smalltalk_greeting
+what's up,smalltalk_greeting
+good afternoon,smalltalk_greeting
+jarvis hello,smalltalk_greeting
+assistant hello,smalltalk_greeting
+hi friend,smalltalk_greeting
+hey assistant,smalltalk_greeting
+hi jarvis,smalltalk_greeting
+greetings,smalltalk_greeting
+hello friend,smalltalk_greeting
+namaste,smalltalk_greeting
+vanakkam,smalltalk_greeting
+hola,smalltalk_greeting
+hi robot,smalltalk_greeting
+morning assistant,smalltalk_greeting
+evening assistant,smalltalk_greeting
+hey dude,smalltalk_greeting
+sup,smalltalk_greeting
+hi there,smalltalk_greeting
+yo assistant,smalltalk_greeting
+
+shutdown,system_exit
+quit,system_exit
+exit,system_exit
+close assistant,system_exit
+terminate,system_exit
+stop program,system_exit
+stop assistant,system_exit
+turn off,system_exit
+power off,system_exit
+shut down the system,system_exit
+end the session,system_exit
+close this,system_exit
+exit now,system_exit
+assistant quit,system_exit
+jarvis stop,system_exit
+i want to exit,system_exit
+stop everything,system_exit
+stop running,system_exit
+kill program,system_exit
+terminate now,system_exit
+terminate this,system_exit
+finish program,system_exit
+end this,system_exit
+close application,system_exit
+stop it,system_exit
+please exit,system_exit
+exit quickly,system_exit
+shutdown assistant,system_exit
+quit the system,system_exit
+end program,system_exit
