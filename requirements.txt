@@ -9,4 +9,6 @@ requests
 python-dotenv
 vosk
 tk
+google-generativeai
+urllib3
 
