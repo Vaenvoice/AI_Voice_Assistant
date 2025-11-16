@@ -4,5 +4,5 @@ config.py
 vosk-model-small-en-us-0.15/
 intent_model.pkl
 notes.txt
-memory/
-__pycache__/
+memory
+__pycache__
