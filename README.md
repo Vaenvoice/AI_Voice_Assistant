@@ -1,4 +1,4 @@
-<h1 align="center"><b>Jarvis AI Voice Assistant</b></h1>
+<h1 align="center"><b>AI Voice Assistant</b></h1>
 
 <p align="justify">
   A desktop-based AI assistant that uses <b><a href="https://ai.google.dev/">Google Gemini</a></b> for intelligence, <b><a href="https://openai.com/index/whisper/">OpenAI Whisper</a></b> for speech recognition, and <b><a href="https://picovoice.ai/platform/porcupine">Porcupine</a></b> for wake-word detection. <br>Built with Python and Tkinter, it features a modern dark-mode GUI and supports offline system control commands.
