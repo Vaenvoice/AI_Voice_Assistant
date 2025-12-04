@@ -1,5 +1,7 @@
 import os
 import tkinter as tk
+from dotenv import load_dotenv 
+load_dotenv()
 from tkinter import scrolledtext
 from datetime import datetime
 import types
