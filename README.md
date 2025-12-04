@@ -1,87 +1,114 @@
-🚀 AI Voice Assistant (Jarvis) — Python + Gemini + Offline STT
+<h1 align="center"><b>Jarvis AI Voice Assistant</b></h1>
 
-Your personal offline + online AI voice assistant with:
+<p align="justify">
+  A desktop-based AI assistant that uses <b><a href="https://ai.google.dev/">Google Gemini</a></b> for intelligence, <b><a href="https://openai.com/index/whisper/">OpenAI Whisper</a></b> for speech recognition, and <b><a href="https://picovoice.ai/platform/porcupine">Porcupine</a></b> for wake-word detection. <br>Built with Python and Tkinter, it features a modern dark-mode GUI and supports offline system control commands.
+</p>
 
-✔ Wake-word activation (“Hey Jarvis”)
-✔ Online Google STT
-✔ Offline Vosk STT
-✔ Gemini AI chat responses
-✔ GUI Chat Window (Tkinter)
-✔ Intent classification (ML model)
-✔ Notes, jokes, time/date, search, websites, AI chat
+<br>
 
-⸻
+## **📌 Project Overview**
 
-📁 Project Structure
+<p align="justify">This project is a personal AI assistant designed to run on a local machine. It combines the accuracy of cloud-based LLMs (Gemini) with efficient local wake-word detection. Users can interact via voice or text to get answers, control their PC, or launch applications through a clean, responsive interface.
+</p>
+
+<br>
+
+## **🧪 Features**
+
+* **Hybrid Speech Recognition:** Uses **Porcupine** for instant wake-word detection ("Jarvis") and **OpenAI Whisper** for high-accuracy command transcription.
+* **Intelligent Conversations:** Powered by **Google Gemini 1.5 Flash** for human-like, context-aware responses.
+* **Modern GUI:** A dark-themed **Tkinter** interface with real-time typing effects and status indicators.
+* **System Control:** Offline commands to open apps (Notepad, Calculator), websites (YouTube, Google), and check time/date.
+* **Voice Feedback:** Natural-sounding Text-to-Speech using **Edge TTS**.
+* **Multithreading:** Non-blocking UI ensures the assistant listens and speaks without freezing the application.
+
+<br>
+
+## **💻 Tech Stack**
+
+* **Programming Language:** Python
+* **AI Model (LLM):** Google Gemini (via `google-genai`)
+* **Speech-to-Text (STT):** OpenAI Whisper (Local Model)
+* **Wake Word:** Picovoice Porcupine
+* **Text-to-Speech (TTS):** Edge TTS
+* **GUI Framework:** Tkinter (Customized)
+* **Audio Handling:** SoundDevice, PvRecorder, PyDub
+
+<br>
+
+## **📁 Folder Structure**
+
+```bash
 AI_Voice_Assistant/
-│
-├── assistant.py        # Runs Jarvis (voice mode)
-├── gui.py              # GUI chat mode
-├── jarvis.py           # Main assistant class
-├── utils.py
-├── train_intent.py
-│
-├── models/            
-├── data/               # Contains training data (intents)
-│
-├── config.example.py   # Example config
-├── requirements.txt
-└── README.md
-🔐 API Keys
+├── gui.py                  
+├── jarvis_whisper.py       
+├── requirements.txt        
+├── .env                    
+├── wakewords/
+│   └── jarvis.ppn          
+└── README.md                
 
-Create a new file:
+```
+## **🚀 Getting Started**
+1.&nbsp;Clone the Repository
 
-config.py
-
-(Do NOT upload to GitHub.)
-
-GEMINI_API_KEY = "YOUR_API_KEY_HERE"
-
-Your .gitignore already contains:
-config.py
-
-🔧 Installation
-
-1. Clone the repo
-git clone https://github.com/Vaenvoice/AI_Voice_Assistant.git
+```bash
+git clone [https://github.com/YourUsername/AI_Voice_Assistant.git](https://github.com/YourUsername/AI_Voice_Assistant.git)
 cd AI_Voice_Assistant
+```
+2.&nbsp;Set Up a Virtual Environment
+<br>For Windows:
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+For macOS/Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+3.&nbsp;Install Dependencies
 
-2. Install dependencies
+#### <b>Note: You must have <a href="https://www.ffmpeg.org/download.html">FFmpeg</a> installed on your system for audio processing.</b>
+```bash
 pip install -r requirements.txt
+```
+4.&nbsp;Configure API Keys
+<br>Create a file named `.env` in the root folder and add your keys:
 
-3. Setup your config
-cp config.example.py config.py
+```bash
+GEMINI_API_KEY=your_google_gemini_key_here
+PORCUPINE_ACCESS_KEY=your_picovoice_access_key_here
+PPN_PATH=wakewords/jarvis.ppn
+```
 
-Open config.py and paste your Gemini API key.
+5.&nbsp;Run the Application
 
-⸻
+```bash
+python gui.py
+```
+## **📊 How it Works**
+Wake Mode: The system runs in a low-power loop listening for the keyword "Jarvis" using Porcupine.
 
-🗣 Offline STT (Vosk)
+Listening: Once triggered (or if the "Speak" button is pressed), it records audio and transcribes it using Whisper.
 
-Download Vosk English model:
-https://alphacephei.com/vosk/models
-Download:
-vosk-model-small-en-us-0.15
-Extract → place folder inside project root:
-AI_Voice_Assistant/vosk-model-small-en-us-0.15/
+Routing:
 
-🧠 Training your intent model
+Offline Commands: If the text matches a system command (e.g., "`Open Calculator`"), it executes immediately.
 
-Run:
-python train_intent.py
+AI Query: If no command matches, the text is sent to Google Gemini.
 
-This will produce a new file:
-models/intent_pipeline.pkl
+Response: The AI's text response is displayed in the GUI and spoken aloud via Edge TTS.
 
-You must generate this yourself — it is not included in GitHub.
+## **🛠 Troubleshooting**
+FFmpeg Error: If the app crashes when trying to speak or listen, ensure FFmpeg is added to your system PATH.
 
-⸻
+Wake Word Issues: Ensure your jarvis.ppn file matches your OS (Windows/Linux/Mac). You can download platform-specific files from the [Picovoice Console](https://picovoice.ai/platform/porcupine).
 
-▶ Running Jarvis (Voice Mode)
-python assistant.py
+## **📄 License**
+This project is licensed under the MIT License.
 
-Say: “Hey Jarvis”
-Then: ask anything.
-
-💬 Running Jarvis GUI (Chat Mode)
-python gui.py 
+## **📬 Contact**
+For any inquiries or contributions, please contact:
+<br>[Vaenvoice](https://github.com/Vaenvoice)
+<br>[proxybinder](https://github.com/proxybinder)
