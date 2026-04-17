@@ -106,7 +106,6 @@ FFmpeg Error: If the app crashes when trying to speak or listen, ensure FFmpeg i
 
 Wake Word Issues: Ensure your jarvis.ppn file matches your OS (Windows/Linux/Mac). You can download platform-specific files from the [Picovoice Console](https://picovoice.ai/platform/porcupine).
 
-
 ## **📄 License**
 This project is licensed under the MIT License.
 
